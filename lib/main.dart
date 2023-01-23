@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:plz_set_ward_app/common/common.dart';
-import 'package:plz_set_ward_app/screens/loading.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,6 +27,312 @@ class MyPage extends StatefulWidget {
 }
 
 class _MyPageState extends State<MyPage> {
+  int i = 0;
+  
+  final PageController _pageController = PageController();
+  final List<Widget> carouselList = [
+    InkWell(
+      onTap: () {},
+      child: Container(
+        width: 200.w,
+        height: 80.h,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 2,
+              blurRadius: 7,
+              offset: Offset(0.w, 3.h), // changes position of shadow
+            ),
+          ],
+          borderRadius: BorderRadius.all(Radius.circular(13.r) // POINT
+              ),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 6.w, right: 15.w),
+              child: Container(
+                width: 55.w,
+                height: 55.h,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "54.3%",
+                  style: TextStyle(fontSize: 20.sp, color: Colors.black),
+                ),
+                Text(
+                  "1.52.1",
+                  style: TextStyle(fontSize: 11.sp, color: Colors.black),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    ),
+    InkWell(
+      onTap: () {},
+      child: Container(
+        width: 200.w,
+        height: 80.h,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 2,
+              blurRadius: 7,
+              offset: Offset(0.w, 3.h), // changes position of shadow
+            ),
+          ],
+          borderRadius: BorderRadius.all(Radius.circular(13.r) // POINT
+              ),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 6.w, right: 15.w),
+              child: Container(
+                width: 55.w,
+                height: 55.h,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "54.3%",
+                  style: TextStyle(fontSize: 20.sp, color: Colors.black),
+                ),
+                Text(
+                  "1.52.1",
+                  style: TextStyle(fontSize: 11.sp, color: Colors.black),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    ),
+    InkWell(
+      onTap: () {},
+      child: Container(
+        width: 200.w,
+        height: 80.h,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 2,
+              blurRadius: 7,
+              offset: Offset(0.w, 3.h), // changes position of shadow
+            ),
+          ],
+          borderRadius: BorderRadius.all(Radius.circular(13.r) // POINT
+              ),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 6.w, right: 15.w),
+              child: Container(
+                width: 55.w,
+                height: 55.h,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "54.3%",
+                  style: TextStyle(fontSize: 20.sp, color: Colors.black),
+                ),
+                Text(
+                  "1.52.1",
+                  style: TextStyle(fontSize: 11.sp, color: Colors.black),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    ),
+    InkWell(
+      onTap: () {},
+      child: Container(
+        width: 200.w,
+        height: 80.h,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 2,
+              blurRadius: 7,
+              offset: Offset(0.w, 3.h), // changes position of shadow
+            ),
+          ],
+          borderRadius: BorderRadius.all(Radius.circular(13.r) // POINT
+              ),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 6.w, right: 15.w),
+              child: Container(
+                width: 55.w,
+                height: 55.h,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "54.3%",
+                  style: TextStyle(fontSize: 20.sp, color: Colors.black),
+                ),
+                Text(
+                  "1.52.1",
+                  style: TextStyle(fontSize: 11.sp, color: Colors.black),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    ),
+    InkWell(
+      onTap: () {},
+      child: Container(
+        width: 200.w,
+        height: 80.h,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 2,
+              blurRadius: 7,
+              offset: Offset(0.w, 3.h), // changes position of shadow
+            ),
+          ],
+          borderRadius: BorderRadius.all(Radius.circular(13.r) // POINT
+              ),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 6.w, right: 15.w),
+              child: Container(
+                width: 55.w,
+                height: 55.h,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "54.3%",
+                  style: TextStyle(fontSize: 20.sp, color: Colors.black),
+                ),
+                Text(
+                  "1.52.1",
+                  style: TextStyle(fontSize: 11.sp, color: Colors.black),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    ),
+    InkWell(
+      onTap: () {},
+      child: Container(
+        width: 200.w,
+        height: 80.h,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 2,
+              blurRadius: 7,
+              offset: Offset(0.w, 3.h), // changes position of shadow
+            ),
+          ],
+          borderRadius: BorderRadius.all(Radius.circular(13.r) // POINT
+              ),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 6.w, right: 15.w),
+              child: Container(
+                width: 55.w,
+                height: 55.h,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "54.3%",
+                  style: TextStyle(fontSize: 20.sp, color: Colors.black),
+                ),
+                Text(
+                  "1.52.1",
+                  style: TextStyle(fontSize: 11.sp, color: Colors.black),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -76,7 +380,36 @@ class _MyPageState extends State<MyPage> {
                     fillColor: const Color(0xffF2F2F2),
                   ),
                 ),
-              )
+              ),
+              SizedBox(
+                height: 22.h,
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 18.w),
+                child: Row(
+                  children: [
+                    Text(
+                      "OP 챔피언",
+                      style: TextStyle(
+                          fontSize: 19.sp, color: const Color(0xffFFB35A)),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 120.h,
+                child: CarouselSlider(
+                  options: CarouselOptions(
+                      height: 80.h,
+                      viewportFraction: 0.57,
+                      onPageChanged: ((index, reason) {
+                        setState(() {
+                          i = index;
+                        });
+                      })),
+                  items: carouselList,
+                ),
+              ),
             ],
           ),
         ),
