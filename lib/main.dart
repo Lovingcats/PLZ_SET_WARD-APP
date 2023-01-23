@@ -421,6 +421,40 @@ class _MyPageState extends State<MyPage> {
                     dotColor: const Color(0xffD9D9D9),
                     activeDotColor: const Color(0xffFFA030)),
               ),
+              SizedBox(
+                height: 20.h,
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 18.w, right: 18.w),
+                child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: Size(double.infinity, 45.h),
+                      backgroundColor: const Color(0xffFFB35A),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(25.r), // <-- Radius
+                      ),
+                    ),
+                    onPressed: () {},
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          "챔피언 상세보기",
+                          style:
+                              TextStyle(fontSize: 15.sp, color: Colors.white),
+                        ),
+                        SizedBox(
+                          width: 5.w,
+                        ),
+                        Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                          size: 22.h,
+                        )
+                      ],
+                    )),
+              )
             ],
           ),
         ),
