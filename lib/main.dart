@@ -13,9 +13,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
     return ScreenUtilInit(
-      designSize: const Size(414, 736),
+      designSize: const Size(378, 844),
       builder: (BuildContext context, Widget? child) => const MaterialApp(
           title: '와드좀 박아라', debugShowCheckedModeBanner: false, home: MyPage()),
     );
@@ -32,74 +31,54 @@ class MyPage extends StatefulWidget {
 class _MyPageState extends State<MyPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: null,
-      body: Center(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 220.h,
-            ),
-            Image.asset(
-              "images/tier.jfif",
-              scale: 1.3.r,
-            ),
-            SizedBox(
-              height: 30.h,
-            ),
-            Text(
-              "바텀 듀오 뭐하실건가요?",
-              style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w600),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "With.GG ",
-                  style: TextStyle(
-                      fontSize: 25.sp,
-                      fontWeight: FontWeight.w600,
-                      color: CommonColor.orange),
-                ),
-                Text(
-                  "에서 확인해보세요!",
-                  style:
-                      TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w600),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 130.h,
-            ),
-            Padding(
-              padding: EdgeInsets.only(left: 60.w, right: 60.w),
-              child: ElevatedButton(
-                onPressed: () {
-                  // Navigator.push(context,
-                  //     MaterialPageRoute(builder: (context) => const MyPage()));
-
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Loading()));
-                },
-                // ignore: sort_child_properties_last
+    return GestureDetector(
+      onTap: () {
+        FocusScope.of(context).unfocus();
+      },
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        appBar: null,
+        body: Center(
+          child: Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.only(top: 91.h, bottom: 56.h),
                 child: Text(
-                  "보러가기",
+                  "WITH.GG",
                   style: TextStyle(
-                      fontSize: 20.sp,
-                      color: CommonColor.orange,
-                      fontWeight: FontWeight.w600),
-                ),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  minimumSize: Size(double.infinity, 45.h),
-                  shape: RoundedRectangleBorder(
-                      side: BorderSide(width: 1.0, color: CommonColor.orange),
-                      borderRadius: BorderRadius.circular(20.h)),
+                      fontSize: 36.sp,
+                      color: const Color(0xffFFB35A),
+                      fontWeight: FontWeight.bold),
                 ),
               ),
-            ),
-          ],
+              Padding(
+                padding: EdgeInsets.only(left: 39.w, right: 39.w),
+                child: TextField(
+                  textAlignVertical: TextAlignVertical.center,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15.r),
+                      borderSide: BorderSide(
+                        width: 0.w,
+                        style: BorderStyle.none,
+                      ),
+                    ),
+                    filled: true,
+                    hintStyle: TextStyle(
+                        color: const Color(0xffAEAEAE), fontSize: 15.sp),
+                    hintText: "챔피언, 소환사명 검색",
+                    contentPadding: const EdgeInsets.all(0),
+                    prefixIcon: Icon(
+                      Icons.search,
+                      size: 23.h,
+                      color: const Color(0xffAEAEAE),
+                    ),
+                    fillColor: const Color(0xffF2F2F2),
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
