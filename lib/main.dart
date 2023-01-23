@@ -382,17 +382,16 @@ class _MyPageState extends State<MyPage> {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 22.h,
-              ),
               Padding(
-                padding: EdgeInsets.only(left: 18.w),
+                padding: EdgeInsets.only(left: 18.w, top: 22.h),
                 child: Row(
                   children: [
                     Text(
                       "OP 챔피언",
                       style: TextStyle(
-                          fontSize: 19.sp, color: const Color(0xffFFB35A)),
+                          fontSize: 19.sp,
+                          color: const Color(0xffFFB35A),
+                          fontWeight: FontWeight.w500),
                     )
                   ],
                 ),
@@ -416,16 +415,14 @@ class _MyPageState extends State<MyPage> {
                 activeIndex: i,
                 count: carouselList.length,
                 effect: WormEffect(
-                    dotHeight: 10.h,
-                    dotWidth: 10.w,
+                    dotHeight: 7.h,
+                    dotWidth: 7.w,
                     dotColor: const Color(0xffD9D9D9),
                     activeDotColor: const Color(0xffFFA030)),
               ),
-              SizedBox(
-                height: 20.h,
-              ),
               Padding(
-                padding: EdgeInsets.only(left: 18.w, right: 18.w),
+                padding: EdgeInsets.only(
+                    left: 18.w, right: 18.w, bottom: 22.h, top: 20.h),
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       minimumSize: Size(double.infinity, 45.h),
@@ -454,7 +451,22 @@ class _MyPageState extends State<MyPage> {
                         )
                       ],
                     )),
-              )
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 18.w, bottom: 22.h),
+                child: Row(
+                  children: [
+                    Text(
+                      "OP 조합",
+                      style: TextStyle(
+                          fontSize: 19.sp,
+                          color: const Color(0xffFFB35A),
+                          fontWeight: FontWeight.w500),
+                    )
+                  ],
+                ),
+              ),
+              
             ],
           ),
         ),
