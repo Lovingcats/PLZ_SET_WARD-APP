@@ -466,7 +466,267 @@ class _MyPageState extends State<MyPage> {
                   ],
                 ),
               ),
-              
+              Padding(
+                padding: EdgeInsets.only(
+                  left: 18.w,
+                  right: 18.w,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      width: 58.w,
+                      height: 170.h,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 2,
+                            blurRadius: 4,
+                            offset:
+                                Offset(0.w, 3.h), // changes position of shadow
+                          ),
+                        ],
+                        borderRadius:
+                            BorderRadius.all(Radius.circular(13.r) // POINT
+                                ),
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                            top: 20.h, bottom: 20.h, left: 9.w, right: 9.w),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              width: 39.w,
+                              height: 40.h,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.black,
+                              ),
+                            ),
+                            Text(
+                              "56.4%",
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  color: const Color(0xffFF5656)),
+                            ),
+                            Container(
+                              width: 39.w,
+                              height: 40.h,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 58.w,
+                      height: 170.h,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 2,
+                            blurRadius: 4,
+                            offset:
+                                Offset(0.w, 3.h), // changes position of shadow
+                          ),
+                        ],
+                        borderRadius:
+                            BorderRadius.all(Radius.circular(13.r) // POINT
+                                ),
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                            top: 20.h, bottom: 20.h, left: 9.w, right: 9.w),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              width: 39.w,
+                              height: 40.h,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.black,
+                              ),
+                            ),
+                            Text(
+                              "54.5%",
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  color: const Color(0xffFF5656)),
+                            ),
+                            Container(
+                              width: 39.w,
+                              height: 40.h,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 58.w,
+                      height: 170.h,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 2,
+                            blurRadius: 4,
+                            offset:
+                                Offset(0.w, 3.h), // changes position of shadow
+                          ),
+                        ],
+                        borderRadius:
+                            BorderRadius.all(Radius.circular(13.r) // POINT
+                                ),
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                            top: 20.h, bottom: 20.h, left: 9.w, right: 9.w),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              width: 39.w,
+                              height: 40.h,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.black,
+                              ),
+                            ),
+                            Text(
+                              "58.7%",
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  color: const Color(0xffFF5656)),
+                            ),
+                            Container(
+                              width: 39.w,
+                              height: 40.h,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 58.w,
+                      height: 170.h,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 2,
+                            blurRadius: 4,
+                            offset:
+                                Offset(0.w, 3.h), // changes position of shadow
+                          ),
+                        ],
+                        borderRadius:
+                            BorderRadius.all(Radius.circular(13.r) // POINT
+                                ),
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                            top: 20.h, bottom: 20.h, left: 9.w, right: 9.w),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              width: 39.w,
+                              height: 40.h,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.black,
+                              ),
+                            ),
+                            Text(
+                              "55.5%",
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  color: const Color(0xffFF5656)),
+                            ),
+                            Container(
+                              width: 39.w,
+                              height: 40.h,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Container(
+                      width: 58.w,
+                      height: 170.h,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 2,
+                            blurRadius: 4,
+                            offset:
+                                Offset(0.w, 3.h), // changes position of shadow
+                          ),
+                        ],
+                        borderRadius:
+                            BorderRadius.all(Radius.circular(13.r) // POINT
+                                ),
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                            top: 20.h, bottom: 20.h, left: 9.w, right: 9.w),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              width: 39.w,
+                              height: 40.h,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.black,
+                              ),
+                            ),
+                            Text(
+                              "87.5%",
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  color: const Color(0xffFF5656)),
+                            ),
+                            Container(
+                              width: 39.w,
+                              height: 40.h,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
