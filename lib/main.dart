@@ -450,7 +450,7 @@ class _MyPageState extends State<MyPage> {
                         Icon(
                           Icons.arrow_forward_ios,
                           color: Colors.white,
-                          size: 22.h,
+                          size: 17.h,
                         )
                       ],
                     )),
