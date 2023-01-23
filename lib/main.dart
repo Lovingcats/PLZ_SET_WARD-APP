@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 void main() {
@@ -28,8 +29,8 @@ class MyPage extends StatefulWidget {
 
 class _MyPageState extends State<MyPage> {
   int i = 0;
-  
-  final PageController _pageController = PageController();
+
+  final CarouselController _controller = CarouselController();
   final List<Widget> carouselList = [
     InkWell(
       onTap: () {},
@@ -399,6 +400,7 @@ class _MyPageState extends State<MyPage> {
               SizedBox(
                 height: 120.h,
                 child: CarouselSlider(
+                  carouselController: _controller,
                   options: CarouselOptions(
                       height: 80.h,
                       viewportFraction: 0.57,
@@ -409,6 +411,15 @@ class _MyPageState extends State<MyPage> {
                       })),
                   items: carouselList,
                 ),
+              ),
+              AnimatedSmoothIndicator(
+                activeIndex: i,
+                count: carouselList.length,
+                effect: WormEffect(
+                    dotHeight: 10.h,
+                    dotWidth: 10.w,
+                    dotColor: const Color(0xffD9D9D9),
+                    activeDotColor: const Color(0xffFFA030)),
               ),
             ],
           ),
