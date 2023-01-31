@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:plz_set_ward_app/screens/bottombar/champion.dart';
 import 'package:plz_set_ward_app/screens/bottombar/combination.dart';
+import 'package:plz_set_ward_app/screens/bottombar/community.dart';
+import 'package:plz_set_ward_app/screens/bottombar/profile.dart';
 import 'package:plz_set_ward_app/screens/bottombar/search.dart';
 
 import 'package:stylish_bottom_bar/stylish_bottom_bar.dart';
@@ -170,7 +172,13 @@ class _MyPageState extends State<MyPage> {
                   });
                 }
               }),
-              children: const [Search(), Champion(), Combination()],
+              children: const [
+                Search(),
+                Champion(),
+                Combination(),
+                Community(),
+                Profile()
+              ],
             ),
           ),
         ));
