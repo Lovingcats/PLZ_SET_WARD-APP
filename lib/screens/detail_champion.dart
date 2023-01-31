@@ -9,6 +9,9 @@ class DetailChampion extends StatefulWidget {
 }
 
 class _DetailChampionState extends State<DetailChampion> {
+  bool firstloon = true;
+  bool secondloon = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -707,145 +710,249 @@ class _DetailChampionState extends State<DetailChampion> {
                   left: 18.w,
                   right: 18.w,
                 ),
-                child: Container(
-                  width: double.infinity,
-                  height: 60.h,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 2,
-                        blurRadius: 4,
-                        offset: Offset(0.w, 3.h), // changes position of shadow
-                      ),
-                    ],
-                    borderRadius:
-                        BorderRadius.all(Radius.circular(13.r) // POINT
+                child: InkWell(
+                  onTap: () {
+                    setState(() {
+                      firstloon = true;
+                      secondloon = false;
+                    });
+                  },
+                  child: Container(
+                    width: double.infinity,
+                    height: 60.h,
+                    decoration: BoxDecoration(
+                      color: firstloon
+                          ? const Color(0xff373737).withOpacity(0.13)
+                          : Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 2,
+                          blurRadius: 4,
+                          offset:
+                              Offset(0.w, 3.h), // changes position of shadow
+                        ),
+                      ],
+                      borderRadius:
+                          BorderRadius.all(Radius.circular(13.r) // POINT
+                              ),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 10.w, right: 25.w),
+                          child: SizedBox(
+                              height: 50.h,
+                              width: 75.w,
+                              child: Image.asset(
+                                "images/loon1.png",
+                                fit: BoxFit.fill,
+                              )),
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "정밀 + 마법",
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w500),
                             ),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(left: 10.w, right: 25.w),
-                        child: SizedBox(
-                            height: 50.h,
-                            width: 75.w,
-                            child: Image.asset(
-                              "images/loon1.png",
-                              fit: BoxFit.fill,
-                            )),
-                      ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "정밀 + 마법",
-                            style: TextStyle(
-                                fontSize: 13.sp,
-                                color: Colors.black,
-                                fontWeight: FontWeight.w500),
-                          ),
-                          SizedBox(
-                            height: 2.h,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Text(
-                                "픽률 54.87%",
-                                style: TextStyle(
-                                    fontSize: 9.sp,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                              Text(
-                                "승률 57.32%",
-                                style: TextStyle(
-                                    fontSize: 9.sp,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                            ],
-                          )
-                        ],
-                      )
-                    ],
+                            SizedBox(
+                              height: 2.h,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "픽률 54.87%",
+                                  style: TextStyle(
+                                      fontSize: 9.sp,
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                                Text(
+                                  "승률 57.32%",
+                                  style: TextStyle(
+                                      fontSize: 9.sp,
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                              ],
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.only(left: 18.w, right: 18.w, top: 10.h),
-                child: Container(
-                  width: double.infinity,
-                  height: 60.h,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 2,
-                        blurRadius: 4,
-                        offset: Offset(0.w, 3.h), // changes position of shadow
-                      ),
-                    ],
-                    borderRadius:
-                        BorderRadius.all(Radius.circular(13.r) // POINT
+                child: InkWell(
+                  onTap: () {
+                    setState(() {
+                      firstloon = false;
+                      secondloon = true;
+                    });
+                  },
+                  child: Container(
+                    width: double.infinity,
+                    height: 60.h,
+                    decoration: BoxDecoration(
+                      color: secondloon
+                          ? const Color(0xff373737).withOpacity(0.13)
+                          : Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 2,
+                          blurRadius: 4,
+                          offset:
+                              Offset(0.w, 3.h), // changes position of shadow
+                        ),
+                      ],
+                      borderRadius:
+                          BorderRadius.all(Radius.circular(13.r) // POINT
+                              ),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 10.w, right: 25.w),
+                          child: SizedBox(
+                              height: 50.h,
+                              width: 75.w,
+                              child: Image.asset(
+                                "images/loon2.png",
+                                fit: BoxFit.fill,
+                              )),
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "지배 + 정밀",
+                              style: TextStyle(
+                                  fontSize: 13.sp,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w500),
                             ),
+                            SizedBox(
+                              height: 2.h,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "픽률 28.42%",
+                                  style: TextStyle(
+                                      fontSize: 9.sp,
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                                Text(
+                                  "승률 54.59%",
+                                  style: TextStyle(
+                                      fontSize: 9.sp,
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                              ],
+                            )
+                          ],
+                        )
+                      ],
+                    ),
                   ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(left: 10.w, right: 25.w),
-                        child: SizedBox(
-                            height: 50.h,
-                            width: 75.w,
-                            child: Image.asset(
-                              "images/loon2.png",
-                              fit: BoxFit.fill,
-                            )),
+                ),
+              ),
+              SizedBox(
+                height: 20.h,
+              ),
+              Stack(
+                children: [
+                  AnimatedOpacity(
+                    duration: const Duration(milliseconds: 700),
+                    opacity: firstloon ? 1.0 : 0.0,
+                    child: Container(
+                      width: 342.w,
+                      height: 200.h,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 2,
+                            blurRadius: 4,
+                            offset:
+                                Offset(0.w, 3.h), // changes position of shadow
+                          ),
+                        ],
+                        borderRadius:
+                            BorderRadius.all(Radius.circular(13.r) // POINT
+                                ),
                       ),
-                      Column(
+                      child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            "정밀 + 마법",
+                            style: TextStyle(
+                                fontSize: 25.sp,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w500),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  AnimatedOpacity(
+                    duration: const Duration(milliseconds: 700),
+                    opacity: secondloon ? 1.0 : 0.0,
+                    child: Container(
+                      width: 342.w,
+                      height: 200.h,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 2,
+                            blurRadius: 4,
+                            offset:
+                                Offset(0.w, 3.h), // changes position of shadow
+                          ),
+                        ],
+                        borderRadius:
+                            BorderRadius.all(Radius.circular(13.r) // POINT
+                                ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text(
                             "지배 + 정밀",
                             style: TextStyle(
-                                fontSize: 13.sp,
+                                fontSize: 25.sp,
                                 color: Colors.black,
                                 fontWeight: FontWeight.w500),
-                          ),
-                          SizedBox(
-                            height: 2.h,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Text(
-                                "픽률 28.42%",
-                                style: TextStyle(
-                                    fontSize: 9.sp,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                              Text(
-                                "승률 54.59%",
-                                style: TextStyle(
-                                    fontSize: 9.sp,
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                            ],
                           )
                         ],
-                      )
-                    ],
+                      ),
+                    ),
                   ),
-                ),
+                ],
+              ),
+              SizedBox(
+                height: 70.h,
               )
             ],
           )),
