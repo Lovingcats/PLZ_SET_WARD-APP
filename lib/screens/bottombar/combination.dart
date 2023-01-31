@@ -14,7 +14,7 @@ class _CombinationState extends State<Combination> {
     return Scaffold(
       appBar: null,
       body: Center(
-        child: Text("챔피언 페이지", style: TextStyle(fontSize: 30.sp, color: Colors.black),),
+        child: Text("조합 페이지", style: TextStyle(fontSize: 30.sp, color: Colors.black),),
       )
     );
   }
