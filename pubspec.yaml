@@ -93,6 +93,11 @@ flutter:
     - images/jin.jpg
     - images/example1.png
     - images/example2.png
+    - images/skill1.jpg
+    - images/skill2.jpg
+    - images/skill3.jpg
+    - images/skill4.jpg
+    - images/skill5.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
