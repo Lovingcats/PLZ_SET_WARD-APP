@@ -694,6 +694,14 @@ class _DetailChampionState extends State<DetailChampion> {
                   ],
                 ),
               ),
+              Padding(
+                padding: EdgeInsets.only(top: 40.h, bottom: 20.h),
+                child: Text(
+                  "룬 세팅",
+                  style:
+                      TextStyle(fontSize: 17.sp, fontWeight: FontWeight.bold),
+                ),
+              ),
             ],
           )),
         ));
