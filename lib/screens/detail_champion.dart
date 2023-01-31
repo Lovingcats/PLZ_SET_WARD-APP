@@ -14,10 +14,68 @@ class _DetailChampionState extends State<DetailChampion> {
     return Scaffold(
         appBar: null,
         body: Center(
-          child: Text(
-            "챔피언 페이지",
-            style: TextStyle(fontSize: 30.sp, color: Colors.black),
-          ),
-        ));
+            child: Column(
+          children: [
+            Stack(
+              children: [
+                SizedBox(
+                  width: double.infinity,
+                  height: 260.h,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(50.r),
+                      bottomRight: Radius.circular(50.r),
+                    ),
+                    child: Image.asset(
+                      "images/jin.jpg",
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+                Positioned.fill(
+                    child: ClipRRect(
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(50.r),
+                    bottomRight: Radius.circular(50.r),
+                  ),
+                  child: Opacity(
+                    opacity: 0.3,
+                    child: Container(
+                      color: const Color(0xFF000000),
+                    ),
+                  ),
+                )),
+                Positioned.fill(
+                  child: Align(
+                      alignment: Alignment.center,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            height: 85.h,
+                          ),
+                          Text(
+                            "진",
+                            style: TextStyle(
+                                fontSize: 36.sp,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600),
+                          ),
+                          SizedBox(
+                            height: 15.h,
+                          ),
+                          Text(
+                            "J   H   I   N",
+                            style:
+                                TextStyle(fontSize: 15.sp, color: Colors.white),
+                          )
+                        ],
+                      )),
+                ),
+              ],
+            ),
+            
+          ],
+        )));
   }
 }
