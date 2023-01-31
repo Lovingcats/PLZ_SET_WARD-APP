@@ -177,7 +177,247 @@ class _DetailChampionState extends State<DetailChampion> {
                 ),
               ],
             ),
-            
+            SizedBox(
+              height: 20.h,
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 18.w, right: 18.w),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 58.w,
+                    height: 100.h,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 2,
+                          blurRadius: 4,
+                          offset:
+                              Offset(0.w, 3.h), // changes position of shadow
+                        ),
+                      ],
+                      borderRadius:
+                          BorderRadius.all(Radius.circular(13.r) // POINT
+                              ),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          top: 10.h, bottom: 12.h, left: 9.w, right: 9.w),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 39.w,
+                            height: 40.h,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.black,
+                            ),
+                          ),
+                          Text(
+                            "야스오",
+                            style:
+                                TextStyle(fontSize: 9.sp, color: Colors.black),
+                          ),
+                          Text(
+                            "87.5%",
+                            style: TextStyle(
+                                fontSize: 9.sp, color: const Color(0xff6248FF)),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: 58.w,
+                    height: 100.h,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 2,
+                          blurRadius: 4,
+                          offset:
+                              Offset(0.w, 3.h), // changes position of shadow
+                        ),
+                      ],
+                      borderRadius:
+                          BorderRadius.all(Radius.circular(13.r) // POINT
+                              ),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          top: 10.h, bottom: 12.h, left: 9.w, right: 9.w),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 39.w,
+                            height: 40.h,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.black,
+                            ),
+                          ),
+                          Text(
+                            "야스오",
+                            style:
+                                TextStyle(fontSize: 9.sp, color: Colors.black),
+                          ),
+                          Text(
+                            "87.5%",
+                            style: TextStyle(
+                                fontSize: 9.sp, color: const Color(0xff6248FF)),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: 58.w,
+                    height: 100.h,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 2,
+                          blurRadius: 4,
+                          offset:
+                              Offset(0.w, 3.h), // changes position of shadow
+                        ),
+                      ],
+                      borderRadius:
+                          BorderRadius.all(Radius.circular(13.r) // POINT
+                              ),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          top: 10.h, bottom: 12.h, left: 9.w, right: 9.w),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 39.w,
+                            height: 40.h,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.black,
+                            ),
+                          ),
+                          Text(
+                            "야스오",
+                            style:
+                                TextStyle(fontSize: 9.sp, color: Colors.black),
+                          ),
+                          Text(
+                            "87.5%",
+                            style: TextStyle(
+                                fontSize: 9.sp, color: const Color(0xff6248FF)),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: 58.w,
+                    height: 100.h,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 2,
+                          blurRadius: 4,
+                          offset:
+                              Offset(0.w, 3.h), // changes position of shadow
+                        ),
+                      ],
+                      borderRadius:
+                          BorderRadius.all(Radius.circular(13.r) // POINT
+                              ),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          top: 10.h, bottom: 12.h, left: 9.w, right: 9.w),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 39.w,
+                            height: 40.h,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.black,
+                            ),
+                          ),
+                          Text(
+                            "야스오",
+                            style:
+                                TextStyle(fontSize: 9.sp, color: Colors.black),
+                          ),
+                          Text(
+                            "87.5%",
+                            style: TextStyle(
+                                fontSize: 9.sp, color: const Color(0xff6248FF)),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: 58.w,
+                    height: 100.h,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 2,
+                          blurRadius: 4,
+                          offset:
+                              Offset(0.w, 3.h), // changes position of shadow
+                        ),
+                      ],
+                      borderRadius:
+                          BorderRadius.all(Radius.circular(13.r) // POINT
+                              ),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          top: 10.h, bottom: 12.h, left: 9.w, right: 9.w),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            width: 39.w,
+                            height: 40.h,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.black,
+                            ),
+                          ),
+                          Text(
+                            "야스오",
+                            style:
+                                TextStyle(fontSize: 9.sp, color: Colors.black),
+                          ),
+                          Text(
+                            "87.5%",
+                            style: TextStyle(
+                                fontSize: 9.sp, color: const Color(0xff6248FF)),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         )));
   }
