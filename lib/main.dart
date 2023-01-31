@@ -52,7 +52,7 @@ class _MyPageState extends State<MyPage> {
   Widget build(BuildContext context) {
     return DefaultTabController(
         //바텀바 코드
-        length: 3,
+        length: 5,
         child: Scaffold(
           resizeToAvoidBottomInset: false,
           extendBody: true,
@@ -61,50 +61,82 @@ class _MyPageState extends State<MyPage> {
               AnimatedBarItems(
                   icon: Icon(
                     Icons.search,
-                    size: 25.w,
+                    size: 23.w,
                   ),
                   selectedIcon: Icon(
                     Icons.search,
-                    size: 25.w,
+                    size: 23.w,
                   ),
                   selectedColor: const Color(0xffFFA030),
                   backgroundColor: const Color(0xffB7B7B7),
                   title: Text(
                     '검색',
                     style:
-                        TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w500),
+                        TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w500),
                   )),
               AnimatedBarItems(
                   icon: Icon(
                     Icons.emoji_events,
-                    size: 25.w,
+                    size: 23.w,
                   ),
                   selectedIcon: Icon(
                     Icons.emoji_events,
-                    size: 25.w,
+                    size: 23.w,
                   ),
                   selectedColor: const Color(0xffFFA030),
                   backgroundColor: const Color(0xffB7B7B7),
                   title: Text(
                     '챔피언',
                     style:
-                        TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w500),
+                        TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w500),
                   )),
               AnimatedBarItems(
                   icon: Icon(
                     Icons.supervised_user_circle,
-                    size: 25.w,
+                    size: 23.w,
                   ),
                   selectedIcon: Icon(
                     Icons.supervised_user_circle,
-                    size: 25.w,
+                    size: 23.w,
                   ),
                   selectedColor: const Color(0xffFFA030),
                   backgroundColor: const Color(0xffB7B7B7),
                   title: Text(
                     '조힙',
                     style:
-                        TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w500),
+                        TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w500),
+                  )),
+              AnimatedBarItems(
+                  icon: Icon(
+                    Icons.people,
+                    size: 23.w,
+                  ),
+                  selectedIcon: Icon(
+                    Icons.people,
+                    size: 23.w,
+                  ),
+                  selectedColor: const Color(0xffFFA030),
+                  backgroundColor: const Color(0xffB7B7B7),
+                  title: Text(
+                    '커뮤니티',
+                    style:
+                        TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w500),
+                  )),
+              AnimatedBarItems(
+                  icon: Icon(
+                    Icons.account_circle,
+                    size: 23.w,
+                  ),
+                  selectedIcon: Icon(
+                    Icons.account_circle,
+                    size: 23.w,
+                  ),
+                  selectedColor: const Color(0xffFFA030),
+                  backgroundColor: const Color(0xffB7B7B7),
+                  title: Text(
+                    '프로필',
+                    style:
+                        TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w500),
                   )),
             ],
             iconStyle: IconStyle.Default,
