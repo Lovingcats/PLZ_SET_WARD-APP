@@ -18,7 +18,6 @@ class _RankviewState extends State<TierRank> {
     super.initState();
   }
 
-//get으로 github 랭킹을 불러옴
 
   @override
   Widget build(BuildContext context) {
