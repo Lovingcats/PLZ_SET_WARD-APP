@@ -702,6 +702,80 @@ class _DetailChampionState extends State<DetailChampion> {
                       TextStyle(fontSize: 17.sp, fontWeight: FontWeight.bold),
                 ),
               ),
+              Padding(
+                padding: EdgeInsets.only(
+                  left: 18.w,
+                  right: 18.w,
+                ),
+                child: Container(
+                  width: double.infinity,
+                  height: 60.h,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 2,
+                        blurRadius: 4,
+                        offset: Offset(0.w, 3.h), // changes position of shadow
+                      ),
+                    ],
+                    borderRadius:
+                        BorderRadius.all(Radius.circular(13.r) // POINT
+                            ),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(left: 10.w, right: 25.w),
+                        child: SizedBox(
+                            height: 50.h,
+                            width: 75.w,
+                            child: Image.asset(
+                              "images/loon1.png",
+                              fit: BoxFit.fill,
+                            )),
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "정밀 + 마법",
+                            style: TextStyle(
+                                fontSize: 13.sp,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w500),
+                          ),
+                          SizedBox(
+                            height: 2.h,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Text(
+                                "픽률 54.87%",
+                                style: TextStyle(
+                                    fontSize: 9.sp,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                              Text(
+                                "승률 57.32%",
+                                style: TextStyle(
+                                    fontSize: 9.sp,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w500),
+                              ),
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              )
             ],
           )),
         ));
