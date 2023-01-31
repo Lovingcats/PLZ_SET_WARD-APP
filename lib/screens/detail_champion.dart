@@ -417,7 +417,31 @@ class _DetailChampionState extends State<DetailChampion> {
                   ),
                 ],
               ),
-            )
+            ),
+            SizedBox(
+              height: 40.h,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "카운터 ",
+                  style: TextStyle(
+                    fontSize: 17.sp,
+                    color: const Color(0xffFF8A00),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  "챔피언",
+                  style: TextStyle(
+                    fontSize: 17.sp,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
           ],
         )));
   }
