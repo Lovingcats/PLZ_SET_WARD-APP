@@ -74,7 +74,79 @@ class _DetailChampionState extends State<DetailChampion> {
                 ),
               ],
             ),
-            
+            Padding(
+              padding: EdgeInsets.only(top: 40.h, left: 70.w, right: 70.w, bottom: 40.h),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SizedBox(
+                    height: 35.h,
+                    width: 35.w,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(50.r),
+                      ),
+                      child: Image.asset(
+                        "images/skill1.jpg",
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 35.h,
+                    width: 35.w,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(50.r),
+                      ),
+                      child: Image.asset(
+                        "images/skill2.jpg",
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 35.h,
+                    width: 35.w,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(50.r),
+                      ),
+                      child: Image.asset(
+                        "images/skill3.jpg",
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 35.h,
+                    width: 35.w,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(50.r),
+                      ),
+                      child: Image.asset(
+                        "images/skill4.jpg",
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 35.h,
+                    width: 35.w,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(50.r),
+                      ),
+                      child: Image.asset(
+                        "images/skill5.jpg",
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         )));
   }
