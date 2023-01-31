@@ -75,7 +75,8 @@ class _DetailChampionState extends State<DetailChampion> {
               ],
             ),
             Padding(
-              padding: EdgeInsets.only(top: 40.h, left: 70.w, right: 70.w, bottom: 40.h),
+              padding: EdgeInsets.only(
+                  top: 40.h, left: 70.w, right: 70.w, bottom: 40.h),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -146,7 +147,37 @@ class _DetailChampionState extends State<DetailChampion> {
                   ),
                 ],
               ),
-            )
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "상대하기 ",
+                  style: TextStyle(
+                    fontSize: 17.sp,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  "쉬운 ",
+                  style: TextStyle(
+                    fontSize: 17.sp,
+                    color: const Color(0xff6248FF),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  "챔피언",
+                  style: TextStyle(
+                    fontSize: 17.sp,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+            
           ],
         )));
   }
