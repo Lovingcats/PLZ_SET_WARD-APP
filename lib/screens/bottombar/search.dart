@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:plz_set_ward_app/screens/detail_user.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -12,6 +13,7 @@ class Search extends StatefulWidget {
 
 class _SearchState extends State<Search> {
   int i = 0;
+  final TextEditingController _searchController = TextEditingController();
 
   final CarouselController _controller = CarouselController();
   final List<Widget> carouselList = [
@@ -343,7 +345,12 @@ class _SearchState extends State<Search> {
               Padding(
                 padding: EdgeInsets.only(left: 39.w, right: 39.w),
                 child: TextField(
+                  controller: _searchController,
                   textAlignVertical: TextAlignVertical.center,
+                  onEditingComplete: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (_) => const DetailUser()));
+                  },
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15.r),
@@ -415,7 +422,9 @@ class _SearchState extends State<Search> {
                         borderRadius: BorderRadius.circular(25.r), // <-- Radius
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      if (_searchController.text == '') {}
+                    },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
