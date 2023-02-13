@@ -117,7 +117,39 @@ class _DetailUserState extends State<DetailUser> {
                     ))
               ],
             ),
-            
+            Padding(
+              padding: EdgeInsets.only(
+                  top: 15.h, left: 18.w, right: 18.w, bottom: 20.h),
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    minimumSize: Size(double.infinity, 45.h),
+                    backgroundColor: const Color(0xffFFB35A),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(25.r), // <-- Radius
+                    ),
+                  ),
+                  onPressed: () {
+                    //로딩페이지
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        "전적 갱신 ",
+                        style: TextStyle(fontSize: 15.sp, color: Colors.white),
+                      ),
+                      SizedBox(
+                        width: 5.w,
+                      ),
+                      Icon(
+                        Icons.autorenew,
+                        color: Colors.white,
+                        size: 17.h,
+                      )
+                    ],
+                  )),
+            ),
           ],
         )));
   }
