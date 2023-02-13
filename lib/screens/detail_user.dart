@@ -145,12 +145,32 @@ class _DetailUserState extends State<DetailUser> {
                       Icon(
                         Icons.autorenew,
                         color: Colors.white,
-                        size: 17.h,
+                        size: 20.h,
                       )
                     ],
                   )),
             ),
+            Padding(
+              padding: EdgeInsets.only(left: 18.w),
+              child: SingleChildScrollView(
+                reverse: true,
+                child: Row(
+                  children: [
+                    Container(
+
+                    )
+                  ],
+                ),
+              ),
+            )
           ],
         )));
+  }
+}
+
+//글자수에 따라 container 교체
+class SeasonTear {
+  static Widget seasonContainer(int season, String tier) {
+    return Container();
   }
 }
