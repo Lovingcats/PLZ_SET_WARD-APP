@@ -423,7 +423,9 @@ class _SearchState extends State<Search> {
                       ),
                     ),
                     onPressed: () {
-                      if (_searchController.text == '') {}
+                      if (_searchController.text == '') {
+                        //toast 기능 추가
+                      }
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
