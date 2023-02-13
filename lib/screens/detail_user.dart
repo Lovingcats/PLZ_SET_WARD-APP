@@ -28,7 +28,7 @@ class _DetailUserState extends State<DetailUser> {
                           image: AssetImage("images/jin.jpg"),
                           fit: BoxFit.fill)),
                   child: BackdropFilter(
-                    filter: ImageFilter.blur(sigmaX: 1.6, sigmaY: 1.6),
+                    filter: ImageFilter.blur(sigmaX: 2.2, sigmaY: 2.2),
                     child: Container(color: Colors.black.withOpacity(0.1)),
                   ),
                 ),
@@ -52,17 +52,72 @@ class _DetailUserState extends State<DetailUser> {
                         color: Colors.white,
                       )),
                 ),
-                ClipRRect(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(50.r),
-                        ),
-                        child: Image.asset(
-                          "images/skill1.jpg",
-                          fit: BoxFit.fill,
-                        ),
+                Positioned(
+                  top: 181.h,
+                  left: 19.w,
+                  child: SizedBox(
+                    height: 54.h,
+                    width: 54.w,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(50.r),
                       ),
+                      child: Image.asset(
+                        "images/userexample.png",
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                    top: 230.h,
+                    left: 36.w,
+                    child: Container(
+                      width: 20.w,
+                      height: 10.h,
+                      decoration: BoxDecoration(
+                          color: const Color(0xffFF8A00),
+                          borderRadius:
+                              BorderRadius.all(Radius.circular(15.r))),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            "314",
+                            style: TextStyle(
+                                fontSize: 7.sp,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ],
+                      ),
+                    )),
+                Positioned(
+                    top: 194.h,
+                    left: 83.w,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Samsung시리",
+                          style: TextStyle(
+                              fontSize: 17.sp,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.white),
+                        ),
+                        Text(
+                          "래더 랭킹 -",
+                          style: TextStyle(
+                              fontSize: 10.sp,
+                              fontWeight: FontWeight.w500,
+                              color: const Color(0xffAEAEAE)),
+                        ),
+                      ],
+                    ))
               ],
             ),
+            
           ],
         )));
   }
