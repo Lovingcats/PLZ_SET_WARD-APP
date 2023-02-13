@@ -11,6 +11,7 @@ class DetailUser extends StatefulWidget {
 }
 
 class _DetailUserState extends State<DetailUser> {
+  int graycolor = 0xff939393;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -165,7 +166,7 @@ class _DetailUserState extends State<DetailUser> {
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.5),
-                            spreadRadius: 2,
+                            spreadRadius: 1,
                             blurRadius: 4,
                             offset:
                                 Offset(1.w, 2.h), // changes position of shadow
@@ -197,12 +198,12 @@ class _DetailUserState extends State<DetailUser> {
                         width: 100.w,
                         height: 25.h,
                         decoration: BoxDecoration(
-                          color: Color.fromRGBO(255, 255, 255, 1),
+                          color: const Color.fromRGBO(255, 255, 255, 1),
                           borderRadius: BorderRadius.circular(5.r),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.withOpacity(0.5),
-                              spreadRadius: 2,
+                              spreadRadius: 1,
                               blurRadius: 4,
                               offset: Offset(
                                   1.w, 2.h), // changes position of shadow
@@ -240,7 +241,7 @@ class _DetailUserState extends State<DetailUser> {
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.withOpacity(0.5),
-                              spreadRadius: 2,
+                              spreadRadius: 1,
                               blurRadius: 4,
                               offset: Offset(
                                   1.w, 2.h), // changes position of shadow
@@ -267,9 +268,184 @@ class _DetailUserState extends State<DetailUser> {
                         ),
                       ),
                     ),
-                    
                   ],
                 ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 18.w, right: 18.w, top: 20.h),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 168.w,
+                    height: 80.h,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10.r),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 2,
+                          blurRadius: 4,
+                          offset:
+                              Offset(1.w, 2.h), // changes position of shadow
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          width: 50.w,
+                          height: 50.h,
+                          child: Image.asset(
+                            "images/grandmaster.png",
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 13.w,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(top: 10.5.h, bottom: 10.5.h),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                width: 45.w,
+                                height: 15.h,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xffFFB35A),
+                                  borderRadius: BorderRadius.circular(5.r),
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "개인/2인 랭크",
+                                      style: TextStyle(
+                                          fontSize: 7.sp,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w500),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Text(
+                                "Grandmaster 1",
+                                style: TextStyle(
+                                    fontSize: 10.sp,
+                                    fontWeight: FontWeight.bold,
+                                    color: const Color(0xff292929)),
+                              ),
+                              Text(
+                                "382 LP",
+                                style: TextStyle(
+                                    fontSize: 8.sp,
+                                    color: Color(graycolor),
+                                    fontWeight: FontWeight.w500),
+                              ),
+                              Text(
+                                "60승 47패 (56%)",
+                                style: TextStyle(
+                                    fontSize: 8.sp,
+                                    color: Color(graycolor),
+                                    fontWeight: FontWeight.w500),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    width: 168.w,
+                    height: 80.h,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10.r),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 2,
+                          blurRadius: 4,
+                          offset:
+                              Offset(1.w, 2.h), // changes position of shadow
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          width: 50.w,
+                          height: 50.h,
+                          child: Image.asset(
+                            "images/grandmaster.png",
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 13.w,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(top: 10.5.h, bottom: 10.5.h),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                width: 45.w,
+                                height: 15.h,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xffFFB35A),
+                                  borderRadius: BorderRadius.circular(5.r),
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "자유 랭크",
+                                      style: TextStyle(
+                                          fontSize: 7.sp,
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w500),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Text(
+                                "Grandmaster 1",
+                                style: TextStyle(
+                                    fontSize: 10.sp,
+                                    fontWeight: FontWeight.bold,
+                                    color: const Color(0xff292929)),
+                              ),
+                              Text(
+                                "382 LP",
+                                style: TextStyle(
+                                    fontSize: 8.sp,
+                                    color: Color(graycolor),
+                                    fontWeight: FontWeight.w500),
+                              ),
+                              Text(
+                                "60승 47패 (56%)",
+                                style: TextStyle(
+                                    fontSize: 8.sp,
+                                    color: Color(graycolor),
+                                    fontWeight: FontWeight.w500),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
             )
           ],
