@@ -33,7 +33,6 @@ class MyPage extends StatefulWidget {
 }
 
 class _MyPageState extends State<MyPage> {
-  final TextEditingController _searchController = TextEditingController();
   dynamic selected;
   var heart = false;
   PageController controller = PageController();
